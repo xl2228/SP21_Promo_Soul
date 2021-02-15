@@ -1,0 +1,69 @@
+html{
+  min-height: 100%;
+}
+body {
+        background-image: linear-gradient(to bottom, #b9c5f9 0%, #94bbe9 100%);
+        background-repeat: no-repeat;
+        margin-left: 20px;
+        margin-right: 20px;
+}
+
+
+
+.grid-container {
+  display: grid;
+  place-content: space-around;
+  place-items: center;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 0.9fr 1.8fr 0.9fr;
+  gap: 10px 10px;
+  grid-template-areas:
+    "Banner Banner Banner Banner"
+    "video video description description"
+    "g1 g2 g3 g4";
+}
+
+.video { grid-area: video; }
+
+.description { grid-area: description; }
+
+.g1 { grid-area: g1; }
+
+.g2 { grid-area: g2; }
+
+.g3 { grid-area: g3; }
+
+.g4 { grid-area: g4; }
+
+.Banner { grid-area: Banner; }
+
+.description{
+    color: #637ffc;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    padding: 25px 75px 25px 25px ;
+}
+
+
+
+
+
+.gallery {
+    border: 1px solid #ccc;
+    width: 180px;
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
